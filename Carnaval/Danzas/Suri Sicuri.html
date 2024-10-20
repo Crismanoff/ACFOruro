@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Diablada</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .imagen-danza {
+            display: inline-block;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .imagen-danza:hover {
+            transform: scale(1.1);
+        }
+
+        .texto {
+            margin-top: 20px;
+        }
+
+        .texto-botones {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .boton-imagen {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: #ddd;
+            transition: transform 0.3s ease;
+        }
+
+        .boton-imagen:hover {
+            transform: scale(1.1);
+        }
+
+        .grid-textos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            text-align: center;
+        }
+
+        .texto-rota {
+            position: relative;
+            overflow: hidden;
+            height: 100px;
+        }
+
+        .texto-rota:hover::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://via.placeholder.com/100');
+            background-size: cover;
+            transition: all 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SURI SICURI</h1>
+</header>
+
+<section>
+    <h2>Tema Interesante de Danza</h2>
+    <div class="imagen-danza">
+        <img src="https://via.placeholder.com/150" alt="Imagen de danza">
+    </div>
+    <div class="texto">
+        <p>Texto descriptivo sobre la danza.</p>
+    </div>
+</section>
+
+<section class="texto-botones">
+    <div class="boton-imagen">Imagen 1</div>
+    <div class="boton-imagen">Imagen 2</div>
+    <div class="boton-imagen">Imagen 3</div>
+</section>
+
+<section class="grid-textos">
+    <div class="texto-rota">Texto 1</div>
+    <div class="texto-rota">Texto 2</div>
+    <div class="texto-rota">Texto 3</div>
+</section>
+
+</body>
+</html>
